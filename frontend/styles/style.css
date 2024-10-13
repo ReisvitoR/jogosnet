@@ -1,0 +1,160 @@
+/* Reset e estilo geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #fff;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: orange;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+/* Estilizando a caixa de busca e o botão de busca */
+#search-input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 10px;
+    outline: none;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+#search-input::placeholder {
+    color: #aaa;
+}
+
+#search-input:focus {
+    background-color: #444;
+}
+
+#search-btn {
+    background-color: orange;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#search-btn:hover {
+    background-color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #1c1c1c;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero img.highlight-img {
+    width: 150px;
+    height: 200px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+/* Game Summary */
+.game-summary {
+    background-color: #222;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#trailer-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#trailer-video {
+    border-radius: 10px;
+}
+
+/* Game Grid */
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    text-align: center;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Botão "Ver Mais" */
+.view-more-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: orange;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ffcc00;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+}

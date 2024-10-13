@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>GAMER CIRCLE</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <input type="text" id="search-input" placeholder="Buscar jogo...">
+                        <button id="search-btn" class="btn">Buscar</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <img id="highlight-img" src="imagens/thewitcher3.jpeg" alt="The Witcher 3" class="highlight-img">
+            <h2 id="highlight-title">The Witcher 3: Wild Hunt</h2>
+            <p id="highlight-info">RPG | 19 May 2015 | CD Projekt Red</p>
+            <p id="highlight-price" class="price">$29.99</p>
+            <button class="btn buy">Buy Now</button>
+            <button class="btn details" id="view-details">View Details</button>
+        </div>
+    </section>
+
+    <!-- Resumo e Trailer do Jogo -->
+    <section id="game-summary" class="game-summary" style="display: none;">
+        <h3>Resumo do game</h3>
+        <p id="summary-text">The Witcher 3: Wild Hunt é um RPG de mundo aberto ambientado em um universo de fantasia visualmente deslumbrante.</p>
+
+        <!-- Embed do trailer do jogo -->
+        <div id="trailer-container" style="display: none;">
+            <iframe id="trailer-video" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="game-grid">
+        <div class="game card" onclick="updateHighlight('The Witcher 3', 'RPG | 19 May 2015 | CD Projekt Red', '$29.99', 'imagens/wicher3.jpg', 'The Witcher 3: Wild Hunt é um RPG de mundo aberto ambientado em um universo de fantasia.', 'https://www.youtube.com/embed/xt_65k-gv_Q')">
+            <img src="imagens/thewitcher3.jpeg" alt="The Witcher 3">
+            <h3>The Witcher 3</h3>
+            <p>$29.99 | RPG</p>
+        </div>
+        <div class="game card" onclick="updateHighlight('Cyberpunk 2077', 'Action RPG | 10 Dec 2020 | CD Projekt Red', '$49.99', 'imagens/cyberpunk2077.jpg', 'Cyberpunk 2077 é uma história de ação e aventura de mundo aberto.', 'https://www.youtube.com/embed/qIcTM8WXFjk')">
+            <img src="imagens/cyberpunk2077.webp" alt="Cyberpunk 2077">
+            <h3>Cyberpunk 2077</h3>
+            <p>$49.99 | Action RPG</p>
+        </div>
+        <div class="game card" onclick="updateHighlight('God of War', 'Action | 20 Apr 2018 | Santa Monica Studio', '$39.99', 'imagens/god-of-war.jpg', 'God of War segue a jornada de Kratos e seu filho, Atreus.', 'https://www.youtube.com/embed/K0u_kAWLJOA')">
+            <img src="imagens/god-of-war.jpeg" alt="God of War">
+            <h3>God of War</h3>
+            <p>$39.99 | Action</p>
+        </div>
+        <div class="game card" onclick="updateHighlight('GTA V', 'Open World | 17 Sep 2013 | Rockstar Games', '$29.99', 'imagens/gta-v.jpg', 'GTA V é um jogo de ação e aventura em mundo aberto.', 'https://www.youtube.com/embed/QkkoHAzjnUs')">
+            <img src="imagens/gtav.jpg" alt="GTA V">
+            <h3>GTA V</h3>
+            <p>$29.99 | Open World</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Gamer Circle. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
